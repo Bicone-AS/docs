@@ -1,0 +1,37 @@
+---
+title: "Godkjenne appen som administrator"
+description: "Slik godkjenner en administrator Bicone-appen i Microsoft Entra ID."
+icon: "shield-check"
+---
+
+Når en bruker prøver å koble SharePoint til Bicone, kan Microsoft kreve at en administrator godkjenner appen. Dette er en engangsoperasjon — når appen er godkjent, gjelder det for hele organisasjonen.
+
+<Note>
+Du må være logget inn med en konto som har rollen **Cloud Application Administrator**, **Application Administrator** eller **Privileged Role Administrator** i Microsoft Entra.
+</Note>
+
+## Steg 1: En bruker starter tilkoblingen
+
+Bicone-appen registreres ikke i organisasjonens tenant før en bruker har forsøkt å koble til. Be en bruker om å [koble SharePoint til Bicone](/sharepoint/koble-til-bicone) — de vil da se en melding om at administrator-godkjenning kreves.
+
+Hvis organisasjonen har aktivert [admin consent workflow](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/configure-admin-consent-workflow), kan brukeren sende en forespørsel direkte fra denne meldingen. Hvis ikke, får brukeren bare en feilmelding og må kontakte IT manuelt.
+
+## Steg 2: Godkjenn appen
+
+<Steps>
+  <Step title="Logg inn i Microsoft Entra admin center">
+    Gå til [entra.microsoft.com](https://entra.microsoft.com) og logg inn med en administratorkonto.
+  </Step>
+  <Step title="Åpne forespørsler">
+    Klikk **Entra ID** → **Enterprise apps**. Klikk **Admin consent requests** under **Activity** i venstremenyen.
+  </Step>
+  <Step title="Godkjenn Bicone">
+    Finn Bicone i listen, klikk **Review permissions and consent**, og godkjenn.
+  </Step>
+</Steps>
+
+Etter godkjenning kan alle brukere i organisasjonen koble SharePoint til Bicone uten å trenge ytterligere godkjenning.
+
+<Note>
+Denne godkjenningen gir Bicone lesetilgang til SharePoint-filer. Bicone kan ikke endre eller slette filer i SharePoint.
+</Note>
