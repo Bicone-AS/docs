@@ -7,7 +7,7 @@
     "light": "#F7A03B",
     "dark": "#D4760A"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/images/android-chrome-192x192.png",
   "navigation": {
     "groups": [
       {
@@ -39,13 +39,14 @@
   },
   "logo": {
     "light": "/logo/bicone-logo-horizontal-black-transparent.svg",
-    "dark": "/logo/bicone-logo-horizontal-white-transparent.svg"
+    "dark": "/logo/bicone-logo-horizontal-white-transparent.svg",
+    "href": "https://bicone.no"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:support@bicone.no"
+        "href": "mailto:post@bicone.no"
       }
     ],
     "primary": {
@@ -58,5 +59,14 @@
     "socials": {
       "linkedin": "https://linkedin.com/company/bicone-ai"
     }
+  },
+  "appearance": {
+    "default": "light"
+  },
+  "icons": {
+    "library": "tabler"
+  },
+  "fonts": {
+    "family": "Inter"
   }
 }
