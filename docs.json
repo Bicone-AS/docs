@@ -1,13 +1,13 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "almond",
   "name": "Bicone Docs",
   "colors": {
     "primary": "#F5880B",
     "light": "#F7A03B",
     "dark": "#D4760A"
   },
-  "favicon": "/images/android-chrome-192x192.png",
+  "favicon": "/images/favicon.ico",
   "navigation": {
     "groups": [
       {
@@ -21,7 +21,6 @@
         "pages": [
           {
             "group": "SharePoint",
-
             "pages": [
               "sharepoint/hva-er-sharepoint",
               "sharepoint/sharepoint-vs-onedrive",
@@ -68,5 +67,11 @@
   },
   "fonts": {
     "family": "Inter"
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view"
+    ]
   }
 }
